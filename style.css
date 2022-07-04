@@ -1,0 +1,177 @@
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.no-center {
+  transform: translateX(0) translateY(0);
+}
+/* Fonts */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf) format('truetype');
+}
+body {
+  background-color: #e7f5ee;
+  font-family: "Montserrat";
+}
+/* Contact Button Start*/
+.contact-btn {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 100px;
+  width: 200px;
+  height: 72px;
+  box-shadow: 0 5px 10px rgba(0, 0, 40, 0.03);
+  transition: all 0.4s cubic-bezier(0.3, 0, 0, 1.3);
+  overflow: hidden;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.contact-btn .cta {
+  position: absolute;
+  color: #3b5998;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: all 0.25s ease-in-out;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.contact-btn .close {
+  position: absolute;
+  right: 38px;
+  top: 31px;
+  cursor: pointer;
+  color: #cfd2d9;
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.3, 0, 0, 1.3);
+  transform: rotate(-45deg);
+  transform-origin: center center;
+}
+.contact-btn .fake-input {
+  width: 80%;
+  padding-top: 15px;
+  transform: scale(0.7) translateX(10px) translateY(-10px);
+  transition: all 0.25s ease-in-out;
+  transform-origin: 0% 0%;
+  opacity: 0;
+  margin: 10px auto 0 auto;
+  background-color: #f3f6fb;
+  color: #b2b5bc;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 15px;
+  overflow: hidden;
+}
+.clicked {
+  width: 460px;
+  height: 470px;
+  border-radius: 50px;
+  cursor: auto;
+  overflow: visible;
+}
+.contact-btn.clicked .cta {
+  left: 40px;
+  top: 30px;
+  transform: translateX(0) translateY(0);
+  color: #cfd2d9;
+}
+.contact-btn.clicked .close {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.contact-btn.clicked .fake-input {
+  transform: scale(1) translateX(0) translateY(0);
+  opacity: 1;
+  position: relative;
+  top: 50px;
+}
+/* Contact Button End */
+/* Send Button Start */
+.send-btn {
+  position: absolute;
+  background-color: #00e6ac;
+  border-radius: 100px;
+  width: 120px;
+  height: 48px;
+  box-shadow: 0 5px 10px rgba(0, 0, 40, 0.03);
+  transition: all 0.4s cubic-bezier(0.3, 0, 0, 1.3);
+  overflow: hidden;
+  cursor: pointer;
+  top: 400px;
+  left: 300px;
+}
+.send-btn .snd {
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: all 0.25s ease-in-out;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.send-btn .msg-close {
+  position: absolute;
+  right: 18px;
+  top: 15px;
+  cursor: pointer;
+  color: #004d39;
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.3, 0, 0, 1.3);
+  transform: rotate(-45deg);
+  transform-origin: center center;
+}
+.send-btn .msg {
+  width: 180%;
+  padding-top: 15px;
+  transform: scale(0.7) translateX(10px) translateY(-10px);
+  transition: all 0.25s ease-in-out;
+  transform-origin: 0% 0%;
+  opacity: 0;
+  margin: 10px auto 0 auto;
+  background-color: #00e6ac;
+  color: #008060;
+  border-radius: 25px 25px 25px 1px;
+  padding: 15px;
+  font-size: 15px;
+  /*overflow: hidden;*/
+}
+.send-clicked {
+  width: 120px;
+  height: 48px;
+  border-radius: 50px;
+  cursor: auto;
+  overflow: visible;
+}
+.send-btn.send-clicked .snd {
+  color: #004d39;
+}
+.send-btn.send-clicked .msg-close {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.send-btn.send-clicked .msg {
+  transform: scale(1) translateX(0) translateY(0);
+  opacity: 1;
+  position: relative;
+  top: -127px;
+  left: 180px;
+  z-index: 999;
+}
+/* Send Button end*/
